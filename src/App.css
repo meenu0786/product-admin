@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: white;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-bg {
+  background: mediumaquamarine;
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: 0.5s;
+  margin: auto;
+}
+
+body.active {
+  background: #f43648;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+.signup-heading {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-btn {
+  background: white;
+  border: none;
+  color: mediumaquamarine;
+  max-width: 140px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+
+.formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+
+.formBx .form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  transition: 0.5s;
+}
+
+.formBx .signinForm {
+  transition-delay: 0.25s;
+}
+
+.formBx .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx .form form h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.formBx .form form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #333;
+}
+
+.error {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  border: 1.5px solid red !important;
+}
+
+.formBx .form form input[type="submit"] {
+  background: mediumaquamarine;
+  border: none;
+  color: #fff;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.formBx .form form .forgot {
+  color: #333;
+}
+
+.img-container {
+  position: relative;
+  margin: 15px 0px 0px 0px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.img-container .btn {
+  position: absolute;
+  top:1%;
+  right: 1%;
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.empty-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.autocomplete {
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  display: flex;
+}
+
+.search {
+  width: 95%;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 412px;
+    height: 650px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .blueBg {
+    top: 0;
+    height: 100%;
+  }
+
+  .formBx {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-self: center;
+    box-shadow: none;
+  }
+
+  
+  
+}
